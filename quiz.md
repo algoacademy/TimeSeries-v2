@@ -81,10 +81,10 @@ After we analyze the decomposition result of `train_assault`, we are ready to bu
 
 ___
 4. Using Holt-Winters as a model, which is the most appropriate code to model the `train_assault` data?
- - [ ] HoltWinters(train, gamma = F)
- - [ ] HoltWinters(train)
- - [ ] HoltWinters(train, beta = F)
- - [ ] HoltWinters(train, beta = F, gamma = F)
+ - [ ] HoltWinters(train_assault, gamma = F)
+ - [ ] HoltWinters(train_assault)
+ - [ ] HoltWinters(train_assault, beta = F)
+ - [ ] HoltWinters(train_assault, beta = F, gamma = F)
 ___
 
 Let's explore another method to forecast our `train_assault` data using the ARIMA algorithm. Let's build an ARIMA model using `stlm()` function, set the method argument as `method = arima` and don't forget to set the `s.window` argument basen on your time series frequency then store it as `model_arima` object.
@@ -124,7 +124,7 @@ ___
 6. Based on the result, which of the following statement is **TRUE**?
  - [ ] using ARIMA model, the mean absolute percentage error is 17.01%
  - [ ] using Holt-Winters model, the mean absolute percentage error is around 17.01 assault event
- - [ ] The difference of mean absolute percentage error between Holt-Winters and Holt-Winters model is 1.59%
+ - [ ] The difference of mean absolute percentage error between Holt-Winters and Arima model is 1.59%
 
 ___
 
